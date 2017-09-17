@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Content from './Content';
 import Randomize from './Randomize';
+import Contact from './Contact';
 
 class App extends React.Component {
 
@@ -30,6 +31,8 @@ class App extends React.Component {
                 <Content title={this.state.content}/>
                 <button onClick={this.handleChange}>Change</button>
                 <Randomize onChangeNumber={this.onChangeNumber} number={this.state.number}/>
+                <hr/>
+                <Contact/>
             </div>
         );
     }
